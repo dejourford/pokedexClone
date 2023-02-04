@@ -182,7 +182,8 @@ button {
 .pokemonCard {
     border: 3px solid black;
     border-radius: 5px;
-    width: 200px;
+    min-width: 0;
+    width: fit-content;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -198,6 +199,7 @@ button {
 
 .pokemonCard img {
     width: 200px;
+    align-self: center;
     
 }
 

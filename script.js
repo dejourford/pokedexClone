@@ -53,3 +53,15 @@ resetBtn.addEventListener('click', function(){
 resetCloseBtn.addEventListener('click', function(){
     resetBtnModal.style.display = 'none'
 })
+//
+
+// ==== FETCH POKEMON API   ====  //
+fetch ('https://pokeapi.co/api/v2/pokemon/charmander/')
+.then (response => response.json())
+.then (data => {
+    console.log(data)
+    pokemonName.textContent = data.species.name
+})
+.catch (error => {
+    console.log(`${error}`)
+})
