@@ -23,22 +23,71 @@
         </div>
         <!-- ====   BUTTONS FOR ACTIONS ==== -->
         <div class="buttonOptions">
-            <button class="addBtn">Add Pokemon</button>
+            <button class="addPokemonBtn">Add Pokemon</button>
 
+                <!-- ====  ADD MODAL   ==== -->
                 <div id="modal" class="addBtnModal">
                     <div class="modalHeader">
                         <p>Enter the name of the pokemon</p>
-                        <span>&times;</span>
+                        <span class="closeBtn" >&times;</span>
                     </div>
                   
                     <div class="modalContent">
                         <input type="text">
-                        <button class="submitBtn">Submit</button>
+                        <button id="addBtn" class="submitBtn">Add</button>
                     </div>
                 </div>
 
             <button class="deleteBtn">Delete Pokemon</button>
+            
+                <!-- ====  DELETE MODAL   ==== -->
+                <div id="modal" class="deleteBtnModal">
+                    <div class="modalHeader">
+                        <p>Enter the name of the pokemon</p>
+                        <span class="deleteCloseBtn" >&times;</span>
+                    </div>
+                
+                    <div class="modalContent">
+                        <input type="text">
+                        <button id="deleteBtn" class="submitBtn">Delete</button>
+                    </div>
+                </div>
+            
             <button class="showBtn">Show Captured Pokemon</button>
+                <!-- ====    SHOW MODAL   ==== -->
+           <div id="modal" class="showBtnModal">
+                <div class="modalHeader">
+                    <p>Enter the name of the pokemon</p>
+                    <span class="showCloseBtn" >&times;</span>
+                </div>
+            
+                <div class="modalContent">
+                    <input type="text">
+                    <div class="showBtnModalBtns">
+                        <button id="showBtn" class="submitBtn">Show</button>
+                        <button id="showAllBtn" class="submitBtn">Show All</button>
+                    </div>
+            
+                </div>
+            </div>
+
+
+            <button class="resetBtn">Reset Pokedex</button>
+            <!-- ====  RESET MODAL   ==== -->
+       <div id="modal" class="resetBtnModal">
+            <div class="modalHeader">
+                <p class="cautionText">Caution!</p>
+                <p>This will reset the entire pokedex!</p>
+                <span class="resetCloseBtn" >&times;</span>
+            </div>
+        
+            <div class="resetModalContent">
+                <button class="continueBtn">Continue</button>
+                <button class="cancelBtn">Cancel</button>
+            </div>
+        </div>
+
+
         </div>
         <!-- ====   CARDS DISPLAYING POKEMON    ==== -->
         <div class="pokemonLibrary">
