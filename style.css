@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 40px;
+    letter-spacing: 1rem;
+    text-decoration: 5px red overline;
+}
+
+
+
+main {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.buttonOptions {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 5px;
+    border: 2px solid black;
+}
+
+
+.addBtn:hover {
+    background-color: lightgreen;
+}
+
+.deleteBtn:hover {
+    background-color: crimson;
+}
+
+.showBtn:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.pokemonLibrary {
+    border: 5px solid black;
+    padding: 20px;
+}
+
+.pokemonCard {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pokemonCard:hover {
+    background: lightgray;
+    text-decoration: 3px solid crimson underline;
+    transition-duration: 0.3s;
+}
+
+
+.pokemonCard img {
+    width: 200px;
+    
+}
+
+.pokemonCard p {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 0.5rem;
+}
