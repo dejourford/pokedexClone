@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    height: 100vh;
+}
+
 h1 {
     text-align: center;
     padding: 20px;
@@ -177,6 +181,8 @@ button {
 .pokemonLibrary {
     border: 5px solid black;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .pokemonCard {
