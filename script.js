@@ -22,40 +22,35 @@ const pokemonLibrary = document.querySelector('.pokemonLibrary')
 
 // ==== DEFINE FUNCTIONS ====  //
 function getUserPokemon(){
-    const newUserPokemon = document.createElement('pokemonCard')
-    pokemonLibrary.appendChild(newUserPokemon)
     const userPokemon = document.querySelector('.addInput').value
-    console.log(userPokemon)
+    
  
     // ==== FETCH POKEMON API   ====  //
     fetch (`https://pokeapi.co/api/v2/pokemon/${userPokemon}/`)
     .then (response => response.json())
     .then (data => {
         console.log(data)
-        pokemonName.textContent = data.species.name
-        pokemonImg.src = data.sprites.front_default
-        let newUserPokemon = document.createElement('pokemonCard')
-        newUserPokemon = userPokemon
-        pokemonLibrary.appendChild(newUserPokemon)
-        // pokemonLibrary.appendChild(UserPokemon)
+    
+        const card = document.createElement('div')
+        card.className = 'pokemonCard'
+        const name = document.createElement('p')
+        name.className = 'pokemonName'
+        name.textContent = data.species.name
+        const image = document.createElement('img')
+        image.className = 'pokemonImg'
+        image.src = data.sprites.front_default
+    
+        card.appendChild(name)
+        card.appendChild(image)
+        pokemonLibrary.appendChild(card)
+      
+     
     })
     .catch (error => {
         console.log(`${error}`)
     })
 
 }
-
-
-// ==== DISPLAY POKEMON IN LIBRARY  ==== //
-function addToLibrary(){
-    const newUserPokemon = document.createElement('pokemonCard')
-    newUserPokemon = userPokemon
-    pokemonLibrary.appendChild(newUserPokemon)
-    
-}
-
-
-
 
 
 
@@ -70,8 +65,6 @@ closeBtn.addEventListener('click', function(){
 })
 
 addBtn.addEventListener('click', function(){
-    const userPokemon = document.querySelector('.addInput').value
-    console.log(userPokemon)
     getUserPokemon()
 })
 
