@@ -21,3 +21,4 @@ This project is a pokedex clone. It is intended to help reinforce working with l
 <!--    ===============  -->
 2-3-23--initial commit
     20:43--finished styling all components of app. starting on modals for each button.
+    23:34--finished styling the modals and implementing open/close functionality.
