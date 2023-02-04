@@ -41,6 +41,74 @@ button {
     background-color: lightgreen;
 }
 
+#modal {
+    position: fixed;
+    z-index: 1;
+    background-color: whitesmoke;
+    height: 200px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-self: center;
+    
+}
+
+#modal input {
+    width: 50%;
+    align-self: center;
+    border-radius: 5px;
+    height: 30px;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#modal input:focus {
+    outline: none;
+}
+
+#modal p {
+    font-family: fantasy;
+    font-size: 1.7rem;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+}
+
+.modalHeader span {
+    font-size: 2rem;
+    border: 1px solid black;
+    padding: 0px 10px;
+}
+
+.modalHeader span:hover {
+    background: lightgray;
+    cursor: pointer;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.submitBtn {
+    width: 20%;
+    align-self: center;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background: lightgray;
+}
+
 .deleteBtn:hover {
     background-color: crimson;
 }
