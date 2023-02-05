@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+                
+</head>
+<body>
+    <!-- ====   HEADER   ==== -->
+    <header>
+        <h1>Pokedex</h1>
+    </header>
+
+    <!-- ====   MAIN CONTENT    ==== -->
+    <main>
+        
+        <div class="mainHeader">
+            <h2>Welcome to the Trainer Pokedex!</h2>
+        </div>
+        <!-- ====   BUTTONS FOR ACTIONS ==== -->
+        <div class="buttonOptions">
+            <button class="addPokemonBtn">Add Pokemon</button>
+
+                <!-- ====  ADD MODAL   ==== -->
+                <div id="modal" class="addBtnModal">
+                    <div class="modalHeader">
+                        <p>Enter the name of the pokemon</p>
+                        <span class="closeBtn" >&times;</span>
+                    </div>
+                  
+                    <div class="modalContent">
+                        <input class="addInput" type="text">
+                        <button id="addBtn" class="submitBtn">Add</button>
+                    </div>
+                </div>
+
+            <button class="deleteBtn">Delete Pokemon</button>
+            
+                <!-- ====  DELETE MODAL   ==== -->
+                <div id="modal" class="deleteBtnModal">
+                    <div class="modalHeader">
+                        <p>Enter the name of the pokemon</p>
+                        <span class="deleteCloseBtn" >&times;</span>
+                    </div>
+                
+                    <div class="modalContent">
+                        <input type="text">
+                        <button id="deleteBtn" class="submitBtn">Delete</button>
+                    </div>
+                </div>
+            
+            <button class="showBtn">Show Captured Pokemon</button>
+                <!-- ====    SHOW MODAL   ==== -->
+           <div id="modal" class="showBtnModal">
+                <div class="modalHeader">
+                    <p>Enter the name of the pokemon</p>
+                    <span class="showCloseBtn" >&times;</span>
+                </div>
+            
+                <div class="modalContent">
+                    <input type="text">
+                    <div class="showBtnModalBtns">
+                        <button id="showBtn" class="submitBtn">Show</button>
+                        <button id="showAllBtn" class="submitBtn">Show All</button>
+                    </div>
+            
+                </div>
+            </div>
+
+
+            <button class="resetBtn">Reset Pokedex</button>
+            <!-- ====  RESET MODAL   ==== -->
+       <div id="modal" class="resetBtnModal">
+            <div class="modalHeader">
+                <p class="cautionText">Caution!</p>
+                <p>This will reset the entire pokedex!</p>
+                <span class="resetCloseBtn" >&times;</span>
+            </div>
+        
+            <div class="resetModalContent">
+                <button class="continueBtn">Continue</button>
+                <button class="cancelBtn">Cancel</button>
+            </div>
+        </div>
+
+
+        </div>
+        <!-- ====   CARDS DISPLAYING POKEMON    ==== -->
+        <div class="pokemonLibrary">
+            <!-- <div class="pokemonCard">
+                <p class="pokemonName"></p>
+                <img class="pokemonImg" src="" alt="">
+            </div> -->
+        </div>
+
+    </main>
+
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
