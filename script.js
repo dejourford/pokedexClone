@@ -22,8 +22,8 @@ const pokemonLibrary = document.querySelector('.pokemonLibrary')
 
 // ==== DEFINE FUNCTIONS ====  //
 function getUserPokemon(){
-    const userPokemon = document.querySelector('.addInput').value
-    
+    let input = document.querySelector('.addInput').value
+    const userPokemon = input.toLowerCase()
  
     // ==== FETCH POKEMON API   ====  //
     fetch (`https://pokeapi.co/api/v2/pokemon/${userPokemon}/`)
@@ -42,8 +42,14 @@ function getUserPokemon(){
     
         card.appendChild(name)
         card.appendChild(image)
+
+        
+
         pokemonLibrary.appendChild(card)
-      
+        
+        
+        
+       
      
     })
     .catch (error => {
@@ -66,6 +72,7 @@ closeBtn.addEventListener('click', function(){
 
 addBtn.addEventListener('click', function(){
     getUserPokemon()
+    
 })
 
 // ==== DELETE MODAL ====//

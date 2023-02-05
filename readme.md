@@ -24,3 +24,4 @@ This project is a pokedex clone. It is intended to help reinforce working with l
     23:34--finished styling the modals and implementing open/close functionality.
 2-4-23--finished the add pokemon part of the pokedex
     21:54--grid layout finished and overflow problem fixed
+    3:56--trying to figure out how to store every card inputed by the user to local storage
