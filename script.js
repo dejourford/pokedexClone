@@ -24,6 +24,7 @@ const pokemonLibrary = document.querySelector('.pokemonLibrary')
 function getUserPokemon(){
     let input = document.querySelector('.addInput').value
     const userPokemon = input.toLowerCase()
+    console.log(userPokemon)
  
     // ==== FETCH POKEMON API   ====  //
     fetch (`https://pokeapi.co/api/v2/pokemon/${userPokemon}/`)
