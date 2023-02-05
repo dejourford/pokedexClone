@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,6 +21,9 @@ h1 {
 
 main {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -179,16 +183,20 @@ button {
 }
 
 .pokemonLibrary {
-    border: 5px solid black;
+   
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+   
+   
+    
 }
 
 .pokemonCard {
     border: 3px solid black;
     border-radius: 5px;
-    width: fit-content;
+    width: auto;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -218,3 +226,25 @@ button {
     text-transform: uppercase;
 }
 
+/* ==== MEDIA QUERIES   ==== */
+@media screen and (max-width: 600px) {
+    
+    .pokemonLibrary{ 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    #modal {
+        max-width:350px ;
+        flex-shrink: 1;
+    }
+
+    .resetBtnModal  {
+        max-width: 375px;
+        
+    }
+
+  }
+
+
+
+ 
